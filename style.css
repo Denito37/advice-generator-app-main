@@ -19,6 +19,7 @@ main{
     background: var(--ntrl-dgBlue);
     text-align: center;
     border-radius: 16px;
+    min-width: 20vw;
     padding: 1rem;
     margin: 4rem 1rem;
 }
@@ -26,6 +27,11 @@ header{
     color: var(--pri-nGreen);
     letter-spacing: 3px;
     text-transform: uppercase;
+}
+p{
+    max-width: 400px;
+    justify-self: center;
+    align-self: center;
 }
 #advice{
     font-size: 28px;
