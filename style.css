@@ -7,21 +7,12 @@
     --ntrl-gBlue:hsl(217 19% 38%);
     --ntrl-dBlue:hsl(218 23% 16%);
 }
+/* *GENERAL */
 body{
     margin: 0;
     background: var(--ntrl-dBlue);
     color: var(--pri-lCyan);
     font-family: 'Manrope', sans-serif;
-}
-main{
-    display: flex;
-    flex-direction: column;
-    background: var(--ntrl-dgBlue);
-    text-align: center;
-    border-radius: 16px;
-    min-width: 20vw;
-    padding: 1rem;
-    margin: 4rem 1rem;
 }
 header{
     color: var(--pri-nGreen);
@@ -33,33 +24,82 @@ p{
     justify-self: center;
     align-self: center;
 }
+button{
+    padding: 1rem;
+    border: 0px solid;
+    border-radius: 50%;
+    background:var(--pri-nGreen);
+    max-width: 5rem;
+}
+button:hover{
+    box-shadow: 0px 0px 5px 5px var(--pri-nGreen);
+}
+/* *MAIN */
+main{
+    display: flex;
+    flex-direction: column;
+    background: var(--ntrl-dgBlue);
+    text-align: center;
+    border-radius: 16px;
+    min-width: 20vw;
+    padding: 1rem;
+    margin: 4rem 1rem;
+}
 #advice{
     font-size: 28px;
 }
-button{
-    border: 0px solid;
-    border-radius: 50%;
+#roll{
     max-width: 4rem;
-    background:var(--pri-nGreen);
-    padding: 1rem;
     justify-self: center;
     align-self: center;
     position: relative;
     top: 3rem;
 }
-button:hover{
-    box-shadow: 0px 0px 5px 5px var(--pri-nGreen);
+/* *BUTTONS */
+.btnGroup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
 }
-
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 48
+}
+/* *QuoteList */
+section{
+    background-color: var(--ntrl-dgBlue);
+    border-radius: 16px;
+    min-width: 20vw;
+    padding: 1.5rem;
+    margin: 4rem 1rem;
+}
+section header{
+    text-align: center;
+}
+/* *Desktop */
 @media only screen and (min-width:769px){
     body{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+        gap: 2rem;
     }
     main{
+        grid-area: 1/2/1/2;
+        max-width: 600px;
+        max-height: 300px;
+        margin: 7rem 0rem 2rem 0rem;
+    }
+    .btnGroup{
+        grid-area: 2/2/2/2;
+    }
+    section{
+        grid-area: 1/3/1/3;
+        margin: 7rem 0rem 2rem 0rem;
         max-width: 600px;
         align-self: center;
-        margin: 10rem 1rem;
-
     }
 }
