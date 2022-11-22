@@ -14,6 +14,17 @@ body{
     color: var(--pri-lCyan);
     font-family: 'Manrope', sans-serif;
 }
+h1{
+    position: absolute;
+    top: 0rem;
+    left: 1.5rem;
+    color: var(--pri-nGreen);
+}
+h1 p{
+    position: relative;
+    bottom: 4.7rem;
+    left: 8rem;
+}
 header{
     color: var(--pri-nGreen);
     letter-spacing: 3px;
@@ -43,7 +54,7 @@ main{
     border-radius: 16px;
     min-width: 20vw;
     padding: 1rem;
-    margin: 4rem 1rem;
+    margin: 4.5rem 1rem;
 }
 #advice{
     font-size: 28px;
