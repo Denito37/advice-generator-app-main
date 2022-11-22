@@ -76,6 +76,8 @@ section{
     min-width: 20vw;
     padding: 1.5rem;
     margin: 4rem 1rem;
+    max-height: 350px;
+    overflow: scroll;
 }
 section header{
     text-align: center;
@@ -85,6 +87,7 @@ section header{
     body{
         display: grid;
         grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+        grid-template-rows: 1fr 0.3fr;
         gap: 2rem;
     }
     main{
@@ -93,7 +96,7 @@ section header{
         max-height: 300px;
         margin: 7rem 0rem 2rem 0rem;
     }
-    .btnGroup{
+   .btnGroup{
         grid-area: 2/2/2/2;
     }
     section{
