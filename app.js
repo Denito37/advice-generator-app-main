@@ -16,7 +16,7 @@ clear.addEventListener('click', clearTxt);
 
 //*FUNCTIONS
 async function getQuote(){
-    const res = await fetch("https://api.adviceslip.com/advice");
+    const res = await fetch("https://api.adviceslip.com/advice" , { cache: "no-cache" });// * no-cache prevent repeated advice
     const data = await res.json();
 
     count += 1;
