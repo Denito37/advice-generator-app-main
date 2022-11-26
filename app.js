@@ -1,4 +1,5 @@
-const btn = document.getElementById('roll');
+// * Variables
+const rollBtn = document.getElementById('roll');
 const list =document.querySelector('.quoteList');
 const likeBtn = document.getElementById('like');
 const clear = document.getElementById('clear');
@@ -7,10 +8,12 @@ const quote = document.getElementById('advice');
 const rollNum =document.getElementById('number');
 let count = 0;
 
+// * initial roll
 getQuote();
 
 // * Events
-btn.addEventListener('click', getQuote);
+document.addEventListener('keydown', keyControls);
+rollBtn.addEventListener('click', getQuote);
 likeBtn.addEventListener('click', saveQuote);
 clear.addEventListener('click', clearTxt);
 
@@ -34,4 +37,15 @@ function clearTxt(){
     list.innerHTML= "";
     count = 0;
     rollNum.innerHTML = count;
+}
+function keyControls(control){
+    if(control.key === 'Enter'){
+        getQuote();
+    }
+    if(control.key === 's'){
+        saveQuote();
+    }
+    if(control.key === 'Backspace'){
+        clearTxt();
+    }
 }
