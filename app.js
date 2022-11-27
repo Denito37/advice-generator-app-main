@@ -6,7 +6,15 @@ const clear = document.getElementById('clear');
 const adviceID = document.querySelector('span');
 const quote = document.getElementById('advice');
 const rollNum =document.getElementById('number');
+let itemsArray = localStorage.getItem('advice') ? JSON.parse(localStorage.getItem('advice')) : [];// * LS
 let count = 0;
+
+//localStorage.setItem('advice', JSON.stringify(itemsArray));// * LS
+//const data = JSON.parse(localStorage.getItem('advice'));// * LS
+for(i = 0; itemsArray.length > i ;i++){
+    console.log(itemsArray[i]);
+    list.innerHTML = itemsArray[i];// * only gets last like
+}
 
 // * initial roll
 getQuote();
@@ -32,11 +40,16 @@ function saveQuote(){
     const node = document.createElement('li');
     node.innerHTML = quote.innerText; 
     list.appendChild(node);
+
+    itemsArray.push(node.innerText);
+    localStorage.setItem('advice', JSON.stringify(itemsArray));
 }
 function clearTxt(){
     list.innerHTML= "";
     count = 0;
     rollNum.innerHTML = count;
+    localStorage.clear();
+    itemsArray = [];
 }
 function keyControls(control){
     if(control.key === 'Enter'){
