@@ -4,7 +4,7 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 **Preview**
 <img 
   src = "images/adviceGenSRC.jpeg" alt= 'site example' 
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  style="display: inline-block; margin: 0 auto; max-width: 200px">
 
 **Built With**:
 - HTML5
