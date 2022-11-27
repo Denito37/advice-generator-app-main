@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="Advice Generator">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,200,1,0" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Advice generator app</title>
 </head>
@@ -17,15 +16,15 @@
   <header>Advice <span></span></header>
   <p id="advice"></p>
   <picture>
-    <source media="(min-width = 769px)" src="images/pattern-divider-desktop.svg">
-    <img src="images/pattern-divider-mobile.svg" alt="divider">
+    <source class="divider" media="(min-width: 769px)" srcset="images/pattern-divider-desktop.svg">
+    <img  class="divider" src="images/pattern-divider-mobile.svg" alt="divider">
   </picture>    
   <button id="roll"><img src="images/icon-dice.svg" alt="roll"></button>
 </main>
 
 <div class="btnGroup">
-  <button id="like" class="material-symbols-rounded">favorite</button>
-  <button id="clear" class="material-symbols-rounded"> clear</button>
+  <button id="like"><img src="images/Like Icon.png" alt="likeIcon"> </button>
+  <button id="clear"><img src="images/Clear Icon.png" alt="ClearIcon"> </button>
 </div>
 
 <section class="quoteLog">

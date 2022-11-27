@@ -62,10 +62,14 @@ main{
 }
 #roll{
     max-width: 4rem;
+    height: auto;
     justify-self: center;
     align-self: center;
     position: relative;
     top: 3rem;
+}
+.divider{
+    max-width: 100%;
 }
 /* *BUTTONS */
 .btnGroup{
@@ -74,12 +78,12 @@ main{
     align-items: center;
     gap: 72px;
 }
-.material-symbols-rounded {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 500,
-  'GRAD' 0,
-  'opsz' 48
+#like,#clear{
+    max-width: 60px;
+}
+#like img,#clear img{
+    max-width: 80%;
+    height: auto;
 }
 /* *QuoteList */
 section{
@@ -94,9 +98,6 @@ section{
 }
 section header{
     text-align: center;
-}
- h1{
-    margin: 1.5rem 0 0 30%;
 }
 /* *Desktop */
 @media only screen and (min-width:769px){

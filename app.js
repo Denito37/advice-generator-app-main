@@ -12,8 +12,11 @@ let count = 0;
 //localStorage.setItem('advice', JSON.stringify(itemsArray));// * LS
 //const data = JSON.parse(localStorage.getItem('advice'));// * LS
 for(i = 0; itemsArray.length > i ;i++){
+    const node = document.createElement('li');
+    node.innerHTML = quote.innerText; 
+    list.appendChild(node);
     console.log(itemsArray[i]);
-    list.innerHTML = itemsArray[i];// * only gets last like
+    node.innerHTML = itemsArray[i];
 }
 
 // * initial roll
