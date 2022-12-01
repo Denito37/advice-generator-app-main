@@ -53,7 +53,7 @@ main{
     text-align: center;
     border-radius: 16px;
     min-width: 20vw;
-    min-height: 200px;
+    height: 260px;
     padding: 1rem;
     margin: 4.5rem 1rem;
 }
@@ -65,8 +65,8 @@ main{
     height: auto;
     justify-self: center;
     align-self: center;
-    position: relative;
-    top: 3rem;
+    position: absolute;
+    top: 21rem;
 }
 .divider{
     max-width: 100%;
@@ -113,8 +113,10 @@ section header{
     main{
         grid-area: 1/2/1/2;
         max-width: 600px;
-        max-height: 320px;
         margin: 7rem 0rem 2rem 0rem;
+    }
+    #roll{
+        top: 23.4rem;
     }
    .btnGroup{
         grid-area: 2/2/2/2;
@@ -123,8 +125,7 @@ section header{
         grid-area: 1/3/1/3;
         margin: 7rem 0rem 2rem 0rem;
         max-width: 600px;
-        min-height: 200px;
-        max-height: 240px;
+        height: 245px;
         /*align-self: center;*/
     }
 }
