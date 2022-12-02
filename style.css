@@ -49,6 +49,7 @@ button:hover{
 main{
     display: flex;
     flex-direction: column;
+    height: 100%;
     background: var(--ntrl-dgBlue);
     text-align: center;
     border-radius: 16px;
@@ -59,6 +60,12 @@ main{
 }
 #advice{
     font-size: 1.5rem;
+    height: 130px;
+    overflow: scroll;
+}
+.divider{
+    align-self: center;
+    justify-self: flex-end;
 }
 #roll{
     max-width: 4rem;
