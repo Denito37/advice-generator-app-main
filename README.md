@@ -14,13 +14,13 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 - localStorage web API
 
 **Features**:
-- Generate a quote by tapping the 'dice' button || 'Enter/Return'
-- Save a quote in the 'Likes' section by tapping the 'heart' button || 'S' key
-- Delete your saves with the 'X' button || 'Backspace/Delete'
+- **Generate** a quote by tapping the 'dice' button || 'Enter/Return'
+- **Save** a quote in the 'Likes' section by tapping the 'heart' button || 'S' key
+- **Delete** your saves with the 'X' button || 'Backspace/Delete'
 - Keep track of your total rolls for the session with the roll counter
 - Keeps your likes saved to your device
 
 **Purpose**:
-- Fun to past the time with while possible getting advice that can 
+- Fun to past the time with while possibly getting advice that can 
   resonate with you.
 

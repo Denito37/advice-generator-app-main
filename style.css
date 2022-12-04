@@ -14,21 +14,11 @@ body{
     color: var(--pri-lCyan);
     font-family: 'Manrope', sans-serif;
 }
-h1{
-    position: absolute;
-    top: 0rem;
-    left: 1.5rem;
-    color: var(--pri-nGreen);
-}
-h1 p{
-    position: relative;
-    bottom: 4.7rem;
-    left: 8rem;
-}
 header{
     color: var(--pri-nGreen);
     letter-spacing: 3px;
     text-transform: uppercase;
+    text-align: center;
 }
 p{
     max-width: 400px;
@@ -45,7 +35,19 @@ button{
 button:hover{
     box-shadow: 0px 0px 5px 5px var(--pri-nGreen);
 }
-/* *MAIN */
+/* *Roll Counter */
+h1{
+    position: absolute;
+    top: 0rem;
+    left: 1.5rem;
+    color: var(--pri-nGreen);
+}
+h1 p{
+    position: relative;
+    bottom: 4.7rem;
+    left: 8rem;
+}
+/* *MAIN - Advice */
 main{
     display: flex;
     flex-direction: column;
@@ -59,13 +61,15 @@ main{
     margin: 4.5rem 1rem;
 }
 #advice{
-    font-size: 1.5rem;
+    font-size: 1.9rem;
+    letter-spacing: .5rem;
     height: 130px;
     overflow: scroll;
 }
 .divider{
     align-self: center;
     justify-self: flex-end;
+    max-width: 100%;
 }
 #roll{
     max-width: 4rem;
@@ -74,9 +78,6 @@ main{
     align-self: center;
     position: absolute;
     top: 21rem;
-}
-.divider{
-    max-width: 100%;
 }
 /* *BUTTONS */
 .btnGroup{
@@ -99,12 +100,8 @@ section{
     min-width: 20vw;
     padding: 1.5rem;
     margin: 4rem 1rem;
-    min-height: 100px;
     max-height: 350px;
     overflow: scroll;
-}
-section header{
-    text-align: center;
 }
 /* *Desktop */
 @media only screen and (min-width:769px){
@@ -133,6 +130,5 @@ section header{
         margin: 7rem 0rem 2rem 0rem;
         max-width: 600px;
         height: 245px;
-        /*align-self: center;*/
     }
 }

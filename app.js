@@ -9,8 +9,6 @@ const rollNum =document.getElementById('number');
 let itemsArray = localStorage.getItem('advice') ? JSON.parse(localStorage.getItem('advice')) : [];// * LS
 let count = 0;
 
-//localStorage.setItem('advice', JSON.stringify(itemsArray));// * LS
-//const data = JSON.parse(localStorage.getItem('advice'));// * LS
 for(i = 0; itemsArray.length > i ;i++){
     const node = document.createElement('li');
     node.innerHTML = quote.innerText; 
@@ -18,9 +16,6 @@ for(i = 0; itemsArray.length > i ;i++){
     console.log(itemsArray[i]);
     node.innerHTML = itemsArray[i];
 }
-
-// * initial roll
-getQuote();
 
 // * Events
 document.addEventListener('keydown', keyControls);
@@ -30,7 +25,7 @@ clear.addEventListener('click', clearTxt);
 
 //*FUNCTIONS
 async function getQuote(){
-    const res = await fetch("https://api.adviceslip.com/advice" , { cache: "no-cache" });// * no-cache prevent repeated advice
+    const res = await fetch("https://api.adviceslip.com/advice" , { cache: "no-cache" });// * no-cache prevents repeated advice
     const data = await res.json();
 
     count += 1;
@@ -38,6 +33,8 @@ async function getQuote(){
 
     adviceID.innerHTML ='#' + data.slip.id;
     quote.innerHTML = '"' + data.slip.advice + '"';
+    quote.style.fontSize = "1.5rem";
+    quote.style.letterSpacing = "0";
 }
 function saveQuote(){
     const node = document.createElement('li');

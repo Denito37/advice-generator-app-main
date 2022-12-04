@@ -10,27 +10,30 @@
 </head>
 <body>
 
-  <h1>ROLL # <p id="number"></p> </h1>
-  
-<main>
-  <header>Advice <span></span></header>
-  <p id="advice"></p>
-  <picture class="divider">
-    <source class="divider" media="(min-width: 769px)" srcset="images/pattern-divider-desktop.svg">
-    <img  class="divider" src="images/pattern-divider-mobile.svg" alt="divider">
-  </picture>    
-  <button id="roll"><img src="images/icon-dice.svg" alt="roll"></button>
-</main>
+  <h1 class="rollCounter">
+    ROLL #  
+    <p id="number"></p> 
+  </h1>
+    
+  <main>
+    <header>Advice <span>#0</span></header>
+    <p id="advice"> ROLL <br> THE <br> DICE</p>
+    <picture class="divider">
+      <source class="divider" media="(min-width: 769px)" srcset="images/pattern-divider-desktop.svg">
+      <img  class="divider" src="images/pattern-divider-mobile.svg" alt="divider">
+    </picture>    
+    <button id="roll"><img src="images/icon-dice.svg" alt="roll"></button>
+  </main>
 
-<div class="btnGroup">
-  <button id="like"><img src="images/Like Icon.png" alt="likeIcon"> </button>
-  <button id="clear"><img src="images/Clear Icon.png" alt="ClearIcon"> </button>
-</div>
+  <div class="btnGroup">
+    <button id="like"><img src="images/Like Icon.png" alt="likeIcon"> </button>
+    <button id="clear"><img src="images/Clear Icon.png" alt="ClearIcon"> </button>
+  </div>
 
-<section class="quoteLog">
-  <header>Likes</header>
-  <ul class="quoteList"></ul>
-</section>
+  <section class="quoteLog">
+    <header>Likes</header>
+    <ul class="quoteList"></ul>
+  </section>
   
 <script src="app.js"></script>
 </body>
